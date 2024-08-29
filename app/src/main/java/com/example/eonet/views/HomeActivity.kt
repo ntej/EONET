@@ -2,7 +2,6 @@ package com.example.eonet.views
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -13,19 +12,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
 import com.example.eonet.EonetApplication
 import com.example.eonet.utils.observe
 import com.example.eonet.ui.theme.EONETTheme
 import com.example.eonet.viewmodel.HomeViewModel
-import com.example.eonet.viewmodel.HomeViewModelFactory
 import javax.inject.Inject
 
 class HomeActivity : ComponentActivity() {
 
     @Inject
-    lateinit var homeViewModelFactory: HomeViewModelFactory
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val vm: HomeViewModel by viewModels { homeViewModelFactory }
+    private val vm: HomeViewModel by viewModels { viewModelFactory }
     override fun onCreate(savedInstanceState: Bundle?) {
         (application as EonetApplication).appComponent.inject(this)
         super.onCreate(savedInstanceState)

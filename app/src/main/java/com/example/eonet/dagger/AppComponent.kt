@@ -1,5 +1,6 @@
 package com.example.eonet.dagger
 
+import androidx.lifecycle.ViewModelProvider
 import com.example.eonet.views.HomeActivity
 import com.example.eonet.dagger.modules.AppModule
 import com.example.eonet.dagger.modules.NetworkModule

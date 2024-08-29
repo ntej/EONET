@@ -5,8 +5,9 @@ import androidx.lifecycle.ViewModel
 import com.example.eonet.utils.divertErrors
 import com.example.eonet.repos.EOCategoriesRepo
 import io.reactivex.subjects.PublishSubject
+import javax.inject.Inject
 
-class HomeViewModel constructor(eoCategoriesRepo: EOCategoriesRepo) :ViewModel() {
+class HomeViewModel @Inject constructor(eoCategoriesRepo: EOCategoriesRepo) :ViewModel() {
 
     val error = PublishSubject.create<Throwable>()
 
