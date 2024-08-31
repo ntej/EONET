@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.eonet.R
-import com.example.eonet.model.Category
+import com.example.eonet.retrofit.model.Category
 import com.example.eonet.repos.EOCategoriesRepo
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

@@ -1,7 +1,7 @@
 package com.example.eonet.retrofit
 
-import com.example.eonet.model.Categories
-import com.example.eonet.model.CategoryData
+import com.example.eonet.retrofit.model.Categories
+import com.example.eonet.retrofit.model.CategoryData
 import io.reactivex.Observable
 import io.reactivex.Single
 import retrofit2.http.GET

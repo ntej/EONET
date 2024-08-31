@@ -41,7 +41,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import com.example.eonet.EonetApplication
-import com.example.eonet.model.Event
+import com.example.eonet.retrofit.model.Event
 import com.example.eonet.ui.theme.EONETTheme
 import com.example.eonet.viewmodel.CategoriesDataViewModel
 import javax.inject.Inject

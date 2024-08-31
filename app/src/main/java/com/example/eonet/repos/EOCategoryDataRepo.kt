@@ -1,6 +1,6 @@
 package com.example.eonet.repos
 
-import com.example.eonet.model.CategoryData
+import com.example.eonet.retrofit.model.CategoryData
 import com.example.eonet.retrofit.IEonetAPI
 import io.reactivex.Observable
 import io.reactivex.Scheduler

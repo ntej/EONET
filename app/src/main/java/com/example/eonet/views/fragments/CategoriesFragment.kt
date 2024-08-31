@@ -37,7 +37,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.eonet.EonetApplication
-import com.example.eonet.model.Category
+import com.example.eonet.retrofit.model.Category
 import com.example.eonet.ui.theme.EONETTheme
 import com.example.eonet.viewmodel.CategoriesViewModel
 import javax.inject.Inject

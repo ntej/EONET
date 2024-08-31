@@ -1,7 +1,7 @@
 package com.example.eonet.repos
 
 import android.util.Log
-import com.example.eonet.model.Categories
+import com.example.eonet.retrofit.model.Categories
 import com.example.eonet.retrofit.IEonetAPI
 import io.reactivex.Observable
 import io.reactivex.Single

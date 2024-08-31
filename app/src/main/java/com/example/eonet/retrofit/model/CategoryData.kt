@@ -1,4 +1,4 @@
-package com.example.eonet.model
+package com.example.eonet.retrofit.model
 
 import java.util.Date
 
