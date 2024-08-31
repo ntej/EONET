@@ -12,6 +12,6 @@ interface IEonetAPI {
    @GET("categories")
    fun getCategories():Observable<Categories>
 
-   @GET("{categoryName}")
-   fun category(@Path("categoryName") categoryName:String, @Query("days") forLastDays: Int):Observable<CategoryData>
+   @GET("categories/{categoryName}")
+   fun getCategory(@Path("categoryName") categoryName:String):Observable<CategoryData>
 }

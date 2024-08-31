@@ -1,5 +1,7 @@
 package com.example.eonet.model
 
+import java.util.Date
+
 data class CategoryData(
     val description: String,
     val events: List<Event>,
@@ -14,8 +16,8 @@ data class CategoryX(
 
 data class Event(
     val categories: List<CategoryX>,
-    val closed: Any,
-    val description: String,
+    val closed: Any?,
+    val description: String?,
     val geometry: List<Geometry>,
     val id: String,
     val link: String,

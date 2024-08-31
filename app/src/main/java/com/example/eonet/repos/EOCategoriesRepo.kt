@@ -5,6 +5,8 @@ import com.example.eonet.model.Categories
 import com.example.eonet.retrofit.IEonetAPI
 import io.reactivex.Observable
 import io.reactivex.Single
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 class EOCategoriesRepo @Inject constructor(val eonetApi: IEonetAPI) {
