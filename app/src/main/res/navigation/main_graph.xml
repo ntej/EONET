@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.example.eonet.views.fragments.CategoriesFragment"
+        android:name="com.example.eonet.view.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/categoryDataFragment"
-        android:name="com.example.eonet.views.fragments.CategoryDataFragment"
+        android:name="com.example.eonet.view.CategoryDataFragment"
         android:label="fragment_category_data"
         tools:layout="@layout/fragment_category_data" >
         <argument
