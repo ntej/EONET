@@ -19,7 +19,7 @@
             android:name=".view.HostActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.EONET">
+            android:theme="@style/Theme.EONET.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -66,6 +66,9 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
 
+    //Splash
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
     val nav_version = "2.7.7"
     // Views/Fragments integration
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")

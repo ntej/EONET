@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.eonet.EonetApplication
@@ -36,6 +37,9 @@ class HostActivity : AppCompatActivity() {
 
     private val vm: HostViewModel by viewModels { viewModelFactory }
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Handle the splash screen transition.
+        installSplashScreen()
+
         super.onCreate(savedInstanceState)
         (application as EonetApplication).appComponent.inject(this)
         vb = ActivityHostBinding.inflate(layoutInflater)
