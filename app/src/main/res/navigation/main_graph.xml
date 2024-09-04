@@ -24,5 +24,17 @@
             android:name="passedCategoryArg"
             app:argType="string"
             android:defaultValue='""' />
+        <action
+            android:id="@+id/viewEventData"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.example.eonet.view.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" >
+        <argument
+            android:name="passedEventArg"
+            app:argType="com.example.eonet.entities.Event" />
     </fragment>
 </navigation>

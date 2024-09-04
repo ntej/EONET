@@ -43,6 +43,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.eonet.EonetApplication
 import com.example.eonet.entities.Event
@@ -140,13 +141,15 @@ class CategoryDataFragment : Fragment() {
             Text(
                 modifier = Modifier.padding(8.dp),
                 text = "Events occurred in last ${sliderPosition} days",
-                color = Color.Blue
             )
 
             // Display each events
             LazyColumn {
                 items(events) { event ->
-                    eventCard(event = event, onClick = {})
+                    eventCard(event = event, onClick = {
+                        val action = CategoryDataFragmentDirections.viewEventData(it)
+                        findNavController().navigate(action)
+                    })
                 }
             }
         }
@@ -168,7 +171,7 @@ class CategoryDataFragment : Fragment() {
 
             Text(
                 text = msg,
-                color = Color.Black,
+                color = MaterialTheme.colorScheme.error,
                 modifier = Modifier.padding(16.dp),
                 textAlign = TextAlign.Center
             )
@@ -215,18 +218,15 @@ class CategoryDataFragment : Fragment() {
                 )
             ) {
                 Text(
-                    text = event.title,
+                    text = event.title?:"NA",
                     modifier = Modifier.padding(all = 10.dp),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = Color.Black
+                    style = MaterialTheme.typography.titleMedium,
                 )
                 //Spacer(modifier = Modifier.height(2.dp))
                 Text(
                     text = "Date: ${vm.formatDate(event.geometry[0].date)}",
                     modifier = Modifier.padding(all = 10.dp),
                     style = MaterialTheme.typography.bodyMedium,
-                    color = Color.DarkGray
-
                 )
             }
         }

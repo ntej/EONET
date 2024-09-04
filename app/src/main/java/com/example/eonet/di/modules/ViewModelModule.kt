@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.eonet.domain.utils.ViewModelKey
 import com.example.eonet.view.viewmodel.CategoriesDataViewModel
 import com.example.eonet.view.viewmodel.CategoriesViewModel
+import com.example.eonet.view.viewmodel.EventDetailViewModel
 import com.example.eonet.view.viewmodel.HostViewModel
 import com.example.eonet.view.viewmodel.DaggerViewModelFactory
 import dagger.Binds
@@ -37,4 +38,9 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(CategoriesDataViewModel::class)
     abstract fun bindCategoriesDataViewModel(categoriesDataViewModel: CategoriesDataViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(EventDetailViewModel::class)
+    abstract fun bindCategoryDetailViewModel(eventDetailViewModel: EventDetailViewModel): ViewModel
 }

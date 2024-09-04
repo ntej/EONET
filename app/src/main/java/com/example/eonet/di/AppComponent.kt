@@ -6,6 +6,7 @@ import com.example.eonet.di.modules.NetworkModule
 import com.example.eonet.di.modules.ViewModelModule
 import com.example.eonet.view.CategoriesFragment
 import com.example.eonet.view.CategoryDataFragment
+import com.example.eonet.view.EventDetailFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -17,5 +18,7 @@ interface AppComponent {
     fun inject(categoriesFragment: CategoriesFragment)
 
     fun inject(categoryDataFragment: CategoryDataFragment)
+
+    fun inject(eventDetailFragment: EventDetailFragment)
 
 }

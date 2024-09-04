@@ -3,20 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="no_name">No Name</string>
-    <string name="drought">Drought</string>
-    <string name="dust_haze">Dust Haze</string>
-    <string name="earthquakes">Earthquakes</string>
-    <string name="floods">Floods</string>
-    <string name="land_slides">Land Slides</string>
-    <string name="manmade">Man-made</string>
-    <string name="sea_lake_ice">Sea Lake Ice</string>
-    <string name="severe_stroms">Severe Storms</string>
-    <string name="snow">Snow</string>
-    <string name="temp_extremes">Extreme Temperatures</string>
-    <string name="volcanoes">Volcanoes</string>
-    <string name="water_color">Water Color</string>
-    <string name="wildfires">Wild Fires</string>
+    <string name="not_available">Not Available</string>
 
 
 </resources>

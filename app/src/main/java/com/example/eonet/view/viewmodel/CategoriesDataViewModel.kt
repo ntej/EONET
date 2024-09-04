@@ -60,7 +60,7 @@ class CategoriesDataViewModel @Inject constructor(private val eoCategoryDataRepo
         getCategoryEvents(categoryId)
     }
 
-    fun formatDate(date:String):String {
+    fun formatDate(date:String?):String {
         return dateFormatter.formatDate(date)
     }
 

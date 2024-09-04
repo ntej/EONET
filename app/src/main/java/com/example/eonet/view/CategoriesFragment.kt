@@ -111,9 +111,9 @@ class CategoriesFragment : Fragment() {
         ) {
             Text(
                 text = msg,
-                color = Color.Black,
                 modifier = Modifier.padding(16.dp),
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.error
             )
             Button(onClick = {
                 vm.retry()
@@ -158,16 +158,12 @@ class CategoriesFragment : Fragment() {
                 Text(
                     text = category.title,
                     modifier = Modifier.padding(all = 10.dp),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = Color.Black
+                    style = MaterialTheme.typography.headlineSmall,
                 )
-                //Spacer(modifier = Modifier.height(2.dp))
                 Text(
                     text = category.description,
                     modifier = Modifier.padding(all = 10.dp),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = Color.DarkGray
-
+                    style = MaterialTheme.typography.bodyLarge,
                 )
             }
         }
