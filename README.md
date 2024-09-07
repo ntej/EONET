@@ -12,10 +12,6 @@ Used
 - Dagger 
 - Retrofit 
 - Rx java 
-- Splashscreen lib(still need some work)
+- Splashscreen lib
 - viewmodel kotlin extensions 
 
-Features for future
-- Implement animated splash screen 
-- New fragment to show Deatiled info of each Event
-- UI touches 
